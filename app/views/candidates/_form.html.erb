@@ -1,0 +1,14 @@
+<%= form_with model: candidate do |form| %>
+    <div>
+        <b><%= form.label "Imię Kandydata" %><br>
+        <%= form.text_field :CandidateName %><br><br>
+        <%= form.label "Nazwisko Kandydata" %><br>
+        <%= form.text_field :CandidateSurname %><br><br>
+        <%= form.label "Data urodzenia Kandydata" %><br>
+        <%= form.date_field :CandidateBirth %></b><br><br>  
+    </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

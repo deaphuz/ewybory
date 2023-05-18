@@ -1,0 +1,11 @@
+<h1><%= @voter.VoterName %> <%= @voter.VoterSurname%></h1>
+<p><%= @voter.VoterBirth %></p>
+<p><%= @voter.VoterPESEL %></p>
+
+<ul>
+  <li><%= link_to "Edytuj głosującego", edit_voter_path(@voter) %></li>
+  <li><%= link_to "Usuń głosującego", voter_path(@voter), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Jesteś pewien?"
+                  } %></li>
+</ul>

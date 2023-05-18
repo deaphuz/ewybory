@@ -1,0 +1,56 @@
+
+    
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      body {
+        margin-top: -8%;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <%= stylesheet_link_tag 'signin', media: 'all' %>
+</head>
+
+<body>
+
+
+<main class="form-signin text-center">
+
+<%= form_with url: sign_in_path do |form| %>
+    <div style="text-align: left" class="form-group">
+        <h1 style="text-align: center" class="h1 mb-3 fw-normal">🔒</h1>
+        <h2 h1 mb-3 fw-normal><br>Rejestracja wyborcy</h2>
+        <br>
+        <%= form.label "Imię" %>
+        <%= form.text_field :VoterName, class: "form-control" %>
+        <br>
+        <%= form.label "Nazwisko" %>
+        <%= form.text_field :VoterSurname, class: "form-control" %>
+        <br>
+        <%= form.label "Data urodzenia" %>
+        <%= form.date_field :VoterBirth, class: "form-control" %>
+        <br>
+        <%= form.label "PESEL" %>
+        <%= form.text_field :VoterPESEL, class: "form-control" %>
+        <br>
+    </div>
+
+    <%= form.submit "Zarejestruj się", :class => "w-100 btn btn-lg btn-primary"%>
+<% end %>
+
+</main>
+
+

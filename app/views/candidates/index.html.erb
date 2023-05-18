@@ -1,0 +1,15 @@
+   </head>
+   <body>
+
+<h1>Kandydaci</h1>
+<ul>
+    <% @candidates.each do |candidate|%>
+        <li>
+            <b>
+                <%= link_to candidate.CandidateName+" "+candidate.CandidateSurname , candidate %>
+            </b><br>
+        </li>
+    <% end %>
+    <br><br><br>
+    <%= link_to "Dodaj kandydata", new_candidate_path %>
+</ul>

@@ -1,0 +1,17 @@
+<h1>Głosujący</h1>
+<ul>
+    <% @voters.each do |voter|%>
+        <li>
+            <b>PESEL</b> <%= voter.VoterPESEL %><br>
+            <b>Imie</b> <%= voter.VoterName %><br>
+            <b>Nazwisko </b><%= voter.VoterSurname %><br>
+            <b>Data urodzenia</b> <%= voter.VoterBirth %>
+            
+        </li>
+    <% end %>
+       <%= link_to "Dodaj głosującego", new_voter_path %>
+    <input type="button" onclick=new_voter_path value="Dodawanie głosującego" />
+    
+
+
+</ul>

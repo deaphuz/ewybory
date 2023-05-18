@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  VoterPESEL: MyString
+  VoterName: MyString
+  VoterSurname: MyString
+  VoterBirth: 2023-04-25
+
+two:
+  VoterPESEL: MyString
+  VoterName: MyString
+  VoterSurname: MyString
+  VoterBirth: 2023-04-25

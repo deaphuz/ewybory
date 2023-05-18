@@ -1,0 +1,20 @@
+   </head>
+   <body>
+
+<h1>Wybory</h1>
+<ul>
+    <% @elections.each do |election|%>
+        <li>
+            <b>Typ wyborów</b> <%= election.type %>
+            <br><b>Start</b> <%= election.startTime.strftime('%d.%m.%Y %H:%M') %>
+            <br><b>Koniec</b> <%= election.endTime.strftime('%d.%m.%Y %H:%M') %>
+            <br><b>Liczba głosów możliwych do oddania </b><%= election.maxVotesPerVoter %>
+            <br><b>Frekwencja</b> <% if election.voterTurnout>0 %><br>
+                <%= election.voterTurnout %>
+            <% else %>
+                Nie podano jeszcze wyników
+            <% end %>
+            
+        </li>
+    <% end %>
+</ul>

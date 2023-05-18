@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  startTime: 2023-05-17 21:09:58
+  endTime: 2023-05-17 21:09:58
+  maxVotesPerVoter: 1
+  voterTurnout: 1.5
+
+two:
+  type: 
+  startTime: 2023-05-17 21:09:58
+  endTime: 2023-05-17 21:09:58
+  maxVotesPerVoter: 1
+  voterTurnout: 1.5

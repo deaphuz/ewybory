@@ -1,0 +1,13 @@
+   </head>
+   <body>
+
+<p><%= link_to "Wróć do kandydatów", candidates_path %></p>
+<h1><%= @candidate.CandidateName %> <%= @candidate.CandidateSurname%></h1>
+<p><%= @candidate.CandidateBirth %></p>
+<ul>
+  <li><%= link_to "Edytuj kanydata", edit_candidate_path(@candidate) %></li>
+  <li><%= link_to "Usuń kandydata", candidate_path(@candidate), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Jesteś pewien?"
+                  } %></li>
+</ul>

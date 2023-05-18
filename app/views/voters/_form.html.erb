@@ -1,0 +1,16 @@
+<%= form_with model: @voter do |form| %>
+    <div>
+        <%= form.label "Imię" %><br>
+        <%= form.text_field :VoterName %><br>
+        <%= form.label "Nazwisko"%><br>
+        <%= form.text_field :VoterSurname %><br>
+        <%= form.label "Data urodzenia" %><br>
+        <%= form.date_field :VoterBirth %><br>
+        <%= form.label "PESEL" %><br>
+        <%= form.text_field :VoterPESEL %><br>
+    </div>
+
+    <div>
+        <%= form.submit 'Prześlij' %>
+    </div>
+<% end %>

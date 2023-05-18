@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>E-wybory</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+  </head>
+
+  <body>
+    <h1>E-wybory - wybory przez Internet</h1>
+    <p>Witamy w systemie e-wyborów!</p>
+<body>
+  Example: Copy To Clipboard
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="1234">
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+  More than one instance of the clipboard controller on the page
+  <div data-controller="clipboard">
+    PIN: <input data-clipboard-target="source" type="text" value="5678">
+    <button data-action="clipboard#copy">Copy to Clipboard</button>
+  </div>
+  Use other HTML elements like link and textarea (instead of button and input)
+  <div data-controller="clipboard">
+    PIN: <textarea data-clipboard-target="source">3737</textarea>
+    <a href="#" data-action="clipboard#copy" class="clipboard-button">Copy to Clipboard</a>
+  </div>
+</body>
+    <%= yield %>
+  </body>
+</html>
+
+
+
+
+
